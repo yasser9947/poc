@@ -245,12 +245,11 @@ var isoCountries = {
     'ZM' : 'Zambia',
     'ZW' : 'Zimbabwe'
 };
-
 function getCountryName (countryCode) {
-    if (isoCountries.hasOwnProperty(countryCode)) {
-        return isoCountries[countryCode];
-    } else {
-        return countryCode;
+    for (var key in isoCountries) {
+      if  ( isoCountries[key].toUpperCase() == countryCode ){
+      return key
+      } 
     }
 }
-export default getCountryName; 
+// getCountryName(countryCode)

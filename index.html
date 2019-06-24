@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Markazi+Text|Mirza|Scheherazade&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Scheherazade&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- <link rel="stylesheet" href="./css/styled.css"> -->
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="./pic/logo2.PNG" alt="" class="header-img-left">
+
+            <h5>الخارطه التفاعليه</h5>
+            <h5>التقارير</h5>
+            <h5>الصفحه الرئيسيه </h5>
+        </div>
+        <div class="right">
+            <h5>هيئه الغذاء والدواء</h5>
+            <img src="./pic/graph-11_icon-icons.com_58029.png" alt="" class="header-img-right">
+
+        </div>
+
+
+    </header>
+    <section class ="frist-section">
+        <div class="frist-div">
+            <img src="./pic/ship.svg" alt="" height="200px" width="200px">
+            <h1>نظام الواردات</h1>
+            <p style="color :  rgb(179, 179, 179, 0.8);     text-align: center;">يقدم هذا التقرير نظره عام حول حجم وحركه
+                استرداد المواد الغذائية والادويه والاجهزه الطبيه إلى المملكة العربية السعودية و كما يوضح مدى تغيرها خلال
+                السنوات السابقة و يبيبن البلدان الاكثر فسح للملكة</p>
+
+        </div>
+        <div class="secand-div">
+
+            <div class="f1">
+                <div class="theSelect">
+                    <div class="form12">
+                        <select class="browser-default" id = "frestSelect">
+                            <option value="" disabled selected>اختر الدوله  </option>
+                            <option value="all" defult selected>جميع الدول  </option>
+
+                          </select>
+                          <p style="color :  rgb(179, 179, 179, 0.8);     text-align: center;width: 230px; " 
+                          >اختيار الدولة ملاحظة: عند اختيارك لدولة ما سوف تتأثر جميع البيانات ادناه</p>
+                    </div>
+                    <div class="form12">
+                        <div class="input-field col s12 ">
+                            <select class="browser-default" id = "secandSelect">
+                                <option value="" disabled selected>المنافذ السعودية  </option>
+                                <option value="all" defult selected>جميع المنافذ  </option>
+    
+                              </select>
+                              <p style="color :  rgb(179, 179, 179, 0.8);     text-align: center;width: 230px; " 
+                              >اختيار منفذ ملاحظة: عند اختيارك منفذ ما سوف تتأثر جميع البيانات ادناه</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rectT " name="test">
+                    <div class="smallbox">اختيار التاريخ</div>
+                    <div class="smallbox">قطاع الاجهزه الطبيه</div>
+                    <div class="smallbox">قطاع الدواء</div>
+                    <div class="smallbox">قطاع الغذاء </div>
+                </div>
+            </div>
+
+            <div class="f2">
+             
+            </div>
+
+        </div>
+        <h1 class="animated fadeInDown"><i class="icon icon-arrow-down"></i></h1>
+
+    </section>
+<section class ="secand-section">
+    <div class="frist-div">
+        <h1>استرداد الادوية</h1>
+        <p style="color :  rgb(179, 179, 179, 0.8);     text-align: center;">يقدم هذا التقرير نظره عام حول حجم وحركه
+            استرداد المواد الغذائية والادويه والاجهزه الطبيه إلى المملكة العربية السعودية و كما يوضح مدى تغيرها خلال
+            السنوات السابقة و يبيبن البلدان الاكثر فسح للملكة</p>
+
+    </div>
+    <div class="thirdSelect">
+    <div class="input-field col s12 ">
+        <select class="browser-default" id = "thirdSelect">
+            <option value="" disabled selected>المنافذ السعودية  </option>
+            <option value="all" defult selected>جميع المنافذ  </option>
+
+          </select>
+          <p style="color :  rgb(179, 179, 179, 0.8);     text-align: center;width: 230px; " 
+          >اختيار منفذ ملاحظة: عند اختيارك منفذ ما سوف تتأثر جميع البيانات ادناه</p>
+    </div>
+</div>
+    <div class="container">
+        <div class="row">
+            <div id="chart-area"></div>
+        </div>
+    </div>
+</section>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./js/country.js"></script>
+    <script src="./js/d3ForData.js"></script>
+    <script src="./js/d3.js"></script>
+    <script src="./js/js.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+
+</html>

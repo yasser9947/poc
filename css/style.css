@@ -1,0 +1,149 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300";
+@import "https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+body{
+    background:  linear-gradient(to top right,  #0b010f   0%,#181e25 100%)
+
+}
+
+header{
+background: black;
+height: 40px;
+display: flex;
+justify-content : space-between;
+
+}
+header div {
+    display: flex;
+}
+.header-img-left {
+
+    height: 40px;
+    width: 45px;
+}
+.header-img-right {
+
+    height: 30px;
+    width: 30x; 
+margin-left: 10px;
+margin-right:50px ;
+}
+header div h5 {
+    text-align: center;
+    font-family: 'Scheherazade', serif;
+    font-size: 20px;
+    color : white; 
+    margin-left:16px;
+    /* margin-top: -3px;  */
+}
+.frist-section{
+    background:  linear-gradient(to top right,  #0b010f   0%,#181e25 100%)
+}
+#frestSelect, #secandSelect ,#thirdSelect{
+    background-color: #0b010f;
+    color: aquamarine;
+    margin-top: 28px;
+}
+select {
+    background-color: #0b010f;
+}
+.select-wrapper input.select-dropdown{
+    color: aquamarine;
+    margin-left:  30px;
+}
+.form12{
+    margin-left:  30px;
+margin-top: -30px;
+}
+.frist-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction : column;
+}
+.frist-div h1 {
+    font-size: 50px;
+    /* margin-top: -20px; */
+    color: rgb(255, 255, 255);
+    
+}
+.secand-div{
+
+}
+.f1{
+    display: flex;
+    justify-content : space-around
+}
+.rectT{
+display: flex; 
+flex-direction : row;
+}
+.smallbox{
+    border:1px solid white;
+    height: 30px;
+    width: 150px; 
+    color: white;
+    text-align: center;
+   color : rgb(179, 179, 179, 0.8);
+}
+.theSelect{
+    display: flex;
+    flex-direction : row;
+}
+select{
+    width: 120px;
+    margin-right: 30px; 
+}
+
+.f2{
+    margin-top: 200px;
+    display: flex;
+    flex-direction : row;
+    justify-content : space-around;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.f2 div {
+
+}
+.f2 div h4{
+    color: aliceblue;
+    text-align: center;
+
+}
+.f2 div p{
+    color: aliceblue;
+    text-align: center;
+    
+}
+.f2 div img{
+    margin-left:  50px;
+}
+.tick text,line {
+    color : rgb(227, 240, 235);
+}
+.domain{
+    color : rgb(227, 240, 235);
+
+}
+.animated {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 50px;
+    font-family: ProximaNovaSoftW03-Semibold;
+    letter-spacing: 0px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.02), 2px 2px rgba(0, 0, 0, 0.02), 3px 3px rgba(0, 0, 0, 0.02), 4px 4px rgba(0, 0, 0, 0.02), 5px 5px rgba(0, 0, 0, 0.02), 6px 6px rgba(0, 0, 0, 0.02), 7px 7px rgba(0, 0, 0, 0.02);
+  }
+  h1 i {
+    position: relative;
+    font-size: 70px;
+  }
+.secand-section{
+    margin-top: 50px
+}
+
+  .thirdSelect{
+      width: 250px;
+      margin: 0 auto;
+  }

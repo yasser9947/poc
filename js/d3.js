@@ -13,7 +13,7 @@ d3.csv('./data/POC.CSV').then(function (seta) {
     $("#thirdSelect").append(outlet)
 
 
-console.log("err")
+console.log("erzxr")
 var data = arranging (seta , "Country_Name_EN")
 var AscendingOrder = []
 var sum = 0
@@ -85,20 +85,20 @@ g.append("text")
     
 
     // X Axis
-    var xAxisCall = d3.axisBottom(x);
-    g.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + height +")")
-        .attr("fill", "aquamarine")
-        .call(xAxisCall);
+    // var xAxisCall = d3.axisBottom(x);
+    // g.append("g")
+    //     .attr("class", "x axis")
+    //     .attr("transform", "translate(0," + height +")")
+    //     .attr("fill", "aquamarine")
+    //     .call(xAxisCall);
 
     // Y Axis
-    var yAxisCall = d3.axisLeft(y)
-        .tickFormat(function(d){ return  d; });
-    g.append("g")
-        .attr("class", "y axis")
-        .attr("fill", "aquamarine")
-        .call(yAxisCall);
+    // var yAxisCall = d3.axisLeft(y)
+    //     .tickFormat(function(d){ return  d; });
+    // g.append("g")
+    //     .attr("class", "y axis")
+    //     .attr("fill", "aquamarine")
+    //     .call(yAxisCall);
        
 
 
@@ -125,94 +125,95 @@ g.append("text")
 
 
 
-// d3.interval(function () {
-//     //your cod here 
+d3.interval(function () {
+    //your cod here 
   
-//     update(seta  , $("#thirdSelect").val())
+    update(seta  , $("#thirdSelect").val())
     
-// } , 1000)
+} , 1000)
 
-// function update( seta , port) {
+function update( seta , port) {
     
-//     var q = []
-//     seta.forEach(ele => {
-//         if (ele.Port_Name.replace(/\s/g, '') == port) {
-//             q.push(ele)
-//         }
-//         else if ("all" == port) {
-//             q = data
-//         }
-//     });
-//     console.log(q)
-//     var data = arranging (data , "Country_Name_EN","")
-//     var AscendingOrder = []
-//     var sum = 0
-//     data.forEach((ele , i) => {
-//         if ( i < 9){
-//             AscendingOrder.push(ele)
-//         }
-//         else{
-//             sum = ele[1] + sum
+    var q = []
+    seta.forEach(ele => {
+        if (ele.Port_Name.replace(/\s/g, '') == port) {
+            q.push(ele)
+        }
+        else if ("all" == port) {
+            q = seta
+        }
+    });
+    console.log(q)
+    var data = arranging (q , "Country_Name_EN","")
+    var AscendingOrder = []
+    var sum = 0
+    data.forEach((ele , i) => {
+        if ( i < 9){
+            AscendingOrder.push(ele)
+        }
+        else{
+            sum = ele[1] + sum
     
-//         }
+        }
     
-//     });
+    });
     
-//     var pusg = ["rest contry" ,sum ]
-//     AscendingOrder.push(pusg)
-//      data = AscendingOrder
-// console.log(q)
+    var pusg = ["rest contry" ,sum ]
+    AscendingOrder.push(pusg)
+     data = AscendingOrder
+console.log(q)
 
-//     y.domain(data.map(function(d){ return d[0] }))
-//     var bottomAxis = d3.axisBottom(x)
-//     xG.transition(t)
-//     .call(bottomAxis).selectAll("text")
-//         .attr('y', `10`)
-//         .attr('x', `-5`)
-//         .attr('text-anchor', `start`)
+    y.domain(data.map(function(d){ return d[0] }))
 
+    var bottomAxis = d3.axisBottom(x)
+    xG.transition(t)
+    .call(bottomAxis).selectAll("text")
+        .attr('y', `10`)
+        .attr('x', `-5`)
+        .attr('text-anchor', `start`)
 
+    var leftAxis = d3.axisLeft(y)
+    yG.transition(t)
+    .call(leftAxis);
 
-
-//     var leftAxis = d3.axisLeft(y)
-//     yG.transition(t)
-//     .call(leftAxis);
-
-
-
-//     var rects = g.selectAll('rect')
-//         .data(data)
-//     // exit old ele not present 
-//     rects.exit()
-//     .attr("fill" , "red")
-//     .transition(t)
-//     .attr("y" , 0)
-//     .attr("height" ,0)
-//     .remove();
-//     // update old ele present in new one 
-//     rects.transition(t)
-//         .attr("x",5)
-//         .attr("y", function (d) {
-//             return y(d[0])
-//         })
-//         .attr("width", function(d){ return  x(d[1]) })
-//         .attr("height", y.bandwidth)
-//         .attr("fill", function (d) {
-//             return "aquamarine"
-//         })
-
-// // enter new ele present in new date 
-
-// rects.enter()
-//     .append("rect")
-//     .attr("x",5)
-//     .attr("y", function(d){ return y(d[0]) })
-//     .attr("height", y.bandwidth )
-//     .attr("fill", "aquamarine")
-//     .attr("y" , 0)
-//     .transition(t)
-//     .attr("width", function(d){ return  x(d[1]) })
+    
 
 
-// }
+    var rects = g.selectAll('rect')
+        .data(data)
+    // exit old ele not present 
+    // yAxisCall.exit().remove();
+    // xAxisCall.exit().remove();
+    rects.exit()
+    .attr("fill" , "red")
+    .transition(t)
+    .attr("y" , 0)
+    .attr("height" ,0)
+    .remove();
+    // update old ele present in new one 
+    rects.transition(t)
+        .attr("x",5)
+        .attr("y", function (d) {
+            return y(d[0])
+        })
+        .attr("width", function(d){ return  x(d[1]) })
+        .attr("height", y.bandwidth)
+        .attr("fill", function (d) {
+            return "aquamarine"
+        })
+
+// enter new ele present in new date 
+
+rects.enter()
+    .append("rect")
+    .attr("x",5)
+    .attr("y", function(d){ return y(d[0]) })
+    .attr("height", y.bandwidth )
+    .attr("fill", "aquamarine")
+    .attr("y" , 0)
+    .transition(t)
+    .attr("width", function(d){ return  x(d[1]) })
+
+
+}
 })

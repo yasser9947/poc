@@ -228,7 +228,7 @@ var isoCountries = {
     'TV' : 'Tuvalu',
     'UG' : 'Uganda',
     'UA' : 'Ukraine',
-    'AE' : 'United Arab Emirates',
+    'AE' : 'UNITED ARAB EMIRATE',
     'GB' : 'United Kingdom',
     'US' : 'United States',
     'UM' : 'United States Outlying Islands',

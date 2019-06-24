@@ -1,3 +1,11 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300";
+@import "https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+body{
+    background:  linear-gradient(to top right,  #0b010f   0%,#181e25 100%)
+
+}
+
 header{
 background: black;
 height: 40px;
@@ -28,13 +36,13 @@ header div h5 {
     margin-left:16px;
     /* margin-top: -3px;  */
 }
-section{
+.frist-section{
     background:  linear-gradient(to top right,  #0b010f   0%,#181e25 100%)
 }
-#frestSelect, #secandSelect{
+#frestSelect, #secandSelect ,#thirdSelect{
     background-color: #0b010f;
     color: aquamarine;
-    margin-top: 20px;
+    margin-top: 28px;
 }
 select {
     background-color: #0b010f;
@@ -111,3 +119,31 @@ select{
 .f2 div img{
     margin-left:  50px;
 }
+.tick text,line {
+    color : rgb(227, 240, 235);
+}
+.domain{
+    color : rgb(227, 240, 235);
+
+}
+.animated {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 50px;
+    font-family: ProximaNovaSoftW03-Semibold;
+    letter-spacing: 0px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.02), 2px 2px rgba(0, 0, 0, 0.02), 3px 3px rgba(0, 0, 0, 0.02), 4px 4px rgba(0, 0, 0, 0.02), 5px 5px rgba(0, 0, 0, 0.02), 6px 6px rgba(0, 0, 0, 0.02), 7px 7px rgba(0, 0, 0, 0.02);
+  }
+  h1 i {
+    position: relative;
+    font-size: 70px;
+  }
+.secand-section{
+    margin-top: 50px
+}
+
+  .thirdSelect{
+      width: 250px;
+      margin: 0 auto;
+  }
